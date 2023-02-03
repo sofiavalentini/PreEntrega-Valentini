@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="preload" href="../css/styles.css" as="styles">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>CONTACTO</title>
+    </head>
+    <body>
+        <!-- Seccion 1 -->
+        <header class="header"> 
+            <a href="./index.html" >
+                <h1 class="titulo">
+                    <span class="color-n">Dherma</span>
+                    Salud
+                </h1>
+            </a>
+            <!-- Navegación -->
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../secciones/unidades.html">UNIDADES</a></li>
+                    <li><a href="../secciones/atencion.html">ATENCION</a></li>
+                    <li><a href="../secciones/contacto.html"class="header__menu--activo">CONTACTO</a></li>
+                    <li><a href="../secciones/preguntas-frecuentes.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contenido">
+            <h2>Contacto</h2>
+            <form action="#" method="GET" class="submission-form">
+                <label for='nombre'>Nombre Completo: </label>
+                <input type="text" placeholder="Ingrese su nombre completo" name="nombre">
+                <label for='tel'>Teléfono: </label>
+                <input type="text" placeholder="Formato:+549 (011) 6305121" name="tel">
+                <label for='email'>Email: </label>
+                <input type="email" placeholder="Ingrese su email" name="email">
+                <Label class="full-width">Consulta o Reclamo: </label>
+                <textarea name="consulta" id="" cols="20" rows="10"> Quiero mas información sobre...</textarea>
+                <label>¿Suscribirse al newsletter?</label>
+                <select name="newsletter" >
+                    <option value="V">Si, suscribirme</option>
+                    <option value="F">No, gracias</option>
+                </select>
+                <input class=boton type="submit" value="Enviar">
+            </form>
+        </section>
+   
+        <footer class="footer">
+            <div class="redes">
+                <a href="https://www.facebook.com/DhermaSalud/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/dhermasalud/?hl=en" target="_blank">Instagram</a>
+                <a href="Tel:+5492616106180">Telefono</a>
+                <a href="https://wa.me/5492616106180?text=Hola%2C+mi+nombre+es+" target="_blank">WhatsApp</a>
+                <a href="mailto:info@dhermasalud.com.ar">Mail</a>
+            </div>
+            <div class="texto">
+                <p>2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
