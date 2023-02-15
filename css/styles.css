@@ -28,7 +28,7 @@ body{
 .titulo{
     color: #000;
     text-align: left;
-    margin-left: 20px
+    margin-left: 30px
 }
 .color-n{
     color: #19B4AA;
@@ -58,6 +58,9 @@ h1,h2,h3{
 .header{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+
+
 }
 .header a{
     text-decoration: none;
@@ -77,6 +80,7 @@ h1,h2,h3{
 
 
 /* MENU */
+
 .header__menu{
     width: 80%;
     margin: 2rem auto;
@@ -84,14 +88,14 @@ h1,h2,h3{
     text-align: center;
     font-size: 0;
 }
-.header__menu > ul li {
-    display: inline-block;
-    width: 20%;
-    position: relative;
-    background: #f4f4e9 ;
+
+.header__menu ul li {
+
+    background: #e1e5e5 ;
+    text-align: center;
 }
 .header__menu li a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -100,19 +104,15 @@ h1,h2,h3{
 }
 .header__menu--activo{
     font-weight: bold;
-    color: black;
+
 }
+
 .header__menu li:hover a {
     background: #bfbfb9;
-    border-radius: 2rem;
+    border-radius: 34rem;
     color: #ffffff;
 }
 
-.header__menu li ul {
-    position: absolute;
-    width: 0;
-    overflow: hidden;
-}
 
 .header__menu li:hover ul {
     width: 100%;
@@ -148,7 +148,7 @@ h1,h2,h3{
     margin: 0 auto;
     padding:50px;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
 }
@@ -156,7 +156,7 @@ h1,h2,h3{
     margin: 0rem;
     padding: 0;
     margin-left: 60rem;
-    margin-right: 25rem;
+    margin-right: 10rem;
     line-height: 1.2;
     font-size: 20px;
     font-family: arial;
@@ -164,7 +164,7 @@ h1,h2,h3{
     text-justify: auto;
 }
 .boton_prin{
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 11px 11px;
     margin-left: 500px;
 }
@@ -358,7 +358,7 @@ input, textarea{
 /* RESPONSIVE MEDIANOS*/
 @media (max-width: 768px) {
     .header{
-        display: flex;
+        display: flex!important;
         align-items: center;
         justify-content: space-around;
     }
@@ -367,13 +367,11 @@ input, textarea{
 /* RESPONSIVE PEQUEÑOS*/
 @media (max-width: 425px) {
     .header{
-        display: flex;
+        display: flex!important;
         align-items: center;
         justify-content: space-around;
     }
 }
-
-
 
 .atencion__lista{
     list-style-position: outside;
